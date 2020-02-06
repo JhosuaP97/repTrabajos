@@ -15,10 +15,10 @@ body{
 }
 
 .o-info-container{
+    
     margin: auto;
     width: 70%;
     height: 70%;
-    /* border: var(--borderColor); */
     background:rgba(63, 63, 63, 0.2);
     text-align: center;
 }
@@ -46,6 +46,10 @@ body{
     margin:0 0 10px 0;
 }
 
+.o-profile .o-profile-description{
+    font-size: 15px;
+}
+
 
 
 /* List projects */
@@ -63,7 +67,7 @@ body{
     text-align: left;
 }
 
-.o-list-project p{
+.o-list-project {
     margin: 10px 20px 20px 20px;
     font-size: 1rem; 
     color: white;
@@ -84,7 +88,7 @@ body{
 }
 
 .o-info-project img{
-    max-width: 60%;
+    max-width: 55%;
 }
 
 
