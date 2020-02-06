@@ -1,50 +1,68 @@
+
+:root{
+    --borderColor: 1px solid white;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto',sans-serif;
-    
+        
+}
+body{
+   background-image: url("resources/bg-profile.jpg");
+   background-size: cover;
 }
 
 .o-info-container{
-    width: 100%;
-    height: 100%;
-    border: 1px solid black;
-    margin: 20px;
+    margin: auto;
+    width: 70%;
+    height: 70%;
+    border: var(--borderColor);
+    background:rgba(63, 63, 63, 0.3);
 }
 
+/* Profile */
 .o-profile{
-    border: 1px solid black;
-    margin: 20px;
+    border: 1px solid white;    
+    text-align: center;
 }
+
 
 .o-profile .o-img-profile{
-    margin: 20px;
-    width: 30%;
-    height: 30%;
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 100px;
+    box-shadow: 0 2px 4px 3px;
+    
 }
 
 .o-profile .o-profile-info{
-    margin: 20px
+    color: #fff;
 }
 
+/* List projects */
+
 .o-list-project{
-    border: 1px solid black;
+    border: var(--borderColor);
     margin: 20px;
+    color: white;
 }
 
 .o-list-project h1{
     font-size: 2rem ;
     margin: 10px;
+    color:#18ed9b;
 }
 
 .o-list-project h2{
     font-size: 1rem; 
+    color: white;
 }
 
 
 .o-info-project{
-    border: 1px solid black;
+    border: var(--borderColor);
     margin: 20px 20px;
     
 }
