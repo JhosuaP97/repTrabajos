@@ -1,6 +1,5 @@
 
 :root{
-    --borderColor: 1px solid white;
     --titulo:#fff;
 }
 *{
@@ -91,8 +90,8 @@ body{
 }
 
 .o-info-project img{
-    max-width:400px;
-    max-height:400px;
+    max-width:350px;
+    max-height:auto;
 }
 
 .o-info-project .o-img-profile{
