@@ -60,6 +60,8 @@ body{
 
 }
 
+
+
 .o-list-project  >h1{
     position: absolute;
     top: -10px;
@@ -79,6 +81,12 @@ body{
     justify-content: center;
     border: var(--borderLine);
     background:rgba(127, 140, 141, 0.4);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, .2) ;
+    transition: .3s;
+}
+
+.o-info-project:hover{
+    box-shadow: 0 2px 20px rgba(255, 255, 255, .4);
 }
 
 
