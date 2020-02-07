@@ -1,6 +1,7 @@
 
 :root{
-    --titulo:#fff;
+    --titleColor:#fff;
+    --borderLine:1px solid #fff;
 }
 *{
     margin: 0;
@@ -49,7 +50,9 @@ body{
 /* List projects */
 
 .o-list-project {
+    position: relative;
     margin: 10px 20px 20px 20px;
+    top: 40px;
     font-size: 1rem; 
     color: white;
     text-align: center;
@@ -59,48 +62,45 @@ body{
 
 .o-list-project  >h1{
     position: absolute;
-    margin:-10px 0 0 30px;
+    top: -10px;
+    margin:-30px 0 0 30px;
     font-size: 2rem;
-    text-transform: uppercase;
-    color:var(--titulo);
+    color:rgba(64, 240, 137, 0.979);
 
-}
-
-.o-list-project .o-img-project{
-    text-align: center;
-    
 }
 
 .o-info-project{
     position: relative;
     width: 100%;
     height: 100%;
-    margin: 8px;
+    margin: 6px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    
+    border: var(--borderLine);
+    background:rgba(127, 140, 141, 0.4);
+}
+
+
+.o-list-project .o-img-project{
+    text-align: left;
+    width: 100%;
+    height: auto;
+   
 }
 
 .o-info-project h1{
-    text-transform: uppercase;
-    color:var(--titulo);
-    margin: 30px 0 10px 0;
+    width: 100%;
+    color:var(--titleColor);
+    font-size: 20px;
+    padding: 10px;
+    background-color: rgb(30, 188, 97);
 }
 
-.o-info-project img{
-    max-width:350px;
-    max-height:auto;
-}
-
-.o-info-project .o-img-profile{
-    align-items: stretch;
-    
-}
 
 .o-info-project p{
     position: relative;
-    top: 10px;
+    margin: 10px;
+    text-align: start;
 }
 
