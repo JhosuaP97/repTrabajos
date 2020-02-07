@@ -1,6 +1,7 @@
 
 :root{
     --borderColor: 1px solid white;
+    --titulo:#fff;
 }
 *{
     margin: 0;
@@ -15,11 +16,11 @@ body{
 }
 
 .o-info-container{
-    
+    position: relative;
     margin: auto;
-    width: 70%;
-    height: 70%;
-    background:rgba(63, 63, 63, 0.2);
+    width: 100%;
+    height: 90%;
+    background:rgba(63, 63, 63, 0.5);
     text-align: center;
 }
 
@@ -46,34 +47,33 @@ body{
     margin:0 0 10px 0;
 }
 
-
-
-
 /* List projects */
-
-.o-list-project{
-    margin: 20px;
-    color: white;
-    text-align: center;
-}
-
-.o-list-project h1{
-    font-size: 2rem;
-    text-transform: uppercase;
-    color:#3cfaab;
-    text-align: left;
-}
 
 .o-list-project {
     margin: 10px 20px 20px 20px;
     font-size: 1rem; 
     color: white;
     text-align: center;
+    display: flex;
 
 }
 
+.o-list-project  >h1{
+    position: absolute;
+    margin:-10px 0 0 30px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color:var(--titulo);
+
+}
+
+.o-list-project .o-img-project{
+    text-align: center;
+    
+}
 
 .o-info-project{
+    position: relative;
     width: 100%;
     height: 100%;
     margin: 8px;
@@ -84,13 +84,24 @@ body{
     
 }
 
-.o-info-project img{
-    max-width: 55%;
+.o-info-project h1{
+    text-transform: uppercase;
+    color:var(--titulo);
+    margin: 30px 0 10px 0;
 }
 
+.o-info-project img{
+    max-width:350px;
+    max-height:350px;
+}
 
-.o-list-project .o-img-project{
-    text-align: center;
-    border: 1px solid rgba(255, 255, 255, .9);
+.o-info-project .o-img-profile{
+    align-items: stretch;
     
 }
+
+.o-info-project p{
+    position: relative;
+    top: 10px;
+}
+
