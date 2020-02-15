@@ -7,5 +7,11 @@ $(document).ready(()=>{
         e.preventDefault();
         $('ul.o-tabs li a').removeClass('.o-tabs o-active');
         $(this).addClass('.o-tabs o-active');
+
+        $('.o-section div').hide();
+
+        let activeTab = $(this).attr('href');
+        $(activeTab).show();
+        return false;
     });
 });
