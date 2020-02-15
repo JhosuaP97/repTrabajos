@@ -1,130 +1,89 @@
-
-:root{
-    --titleColor:#fff;
-    --borderLine:1px solid #fff;
-    --bgColor:rgba(53, 129, 243, 0.932);
-}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
-   background-image: url("resources/bg-profile.jpg");
-   background-size: cover;
-   font-family: 'Roboto',sans-serif;
+    background: linear-gradient(120.11deg, #C14A06 6.3%, rgba(136, 50, 1, 0.26) 84.11%);
+    
 }
 
 .o-info-container{
+    font-family: 'Montserrat',sans-serif;
+    display: flex;
     position: relative;
-    margin: auto;
-    width: 100%;
-    height: 90%;
-    background:rgba(63, 63, 63, 0.5);
-    text-align: center;
-}
+    width: 564.33px;
+    height: 787.06px;
+    background: #f2f2f2;
+    border-radius: 0px 0px 10px 10px;
+    left: 2rem;
+    top: 2rem;
 
-/* Profile */
-.o-profile{
-    position: relative;
-    height: 100%;
-    text-align: left;
-    background-color: var(--bgColor);
 }
-
 
 .o-profile .o-img-profile{
     position: relative;
-    left:35px;
-    top: 10px;
-    max-width: 200px;
-    max-height: 200px;
-    border-radius: 100px;
-    box-shadow: 0 2px 4px 3px;
+    left: 10rem;
+    bottom: 10rem;
+    width: 15rem;
+    height: 15rem;   
+}
+
+.o-img-profile img{
+    max-width: 15rem;
+    border-radius: 100%;
+    border: 4px solid #fdfdfd;
+
+}
+
+.o-profile h1{
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin: -10rem 0 -2rem 0;
     
 }
 
-.o-profile .o-profile-info{
-    position: absolute;
-    left: 270px;
-    top: 45px;
-    color: #fff;
-    margin: 0 0 30px 0;
-    
+.o-profile h2{
+    position: relative;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Open Sans',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #ff6d1b;
+    margin: 2rem 0 0.5em 0;
+}
+.o-profile h3{
+    position: relative;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: lowercase;
+    color: #919191;
+    margin: 1rem;
+
 }
 
 .o-profile p{
-    margin:0 0 10px 0;
-    font-family: 'Open Sans', sans-serif;
-    
-}
-
-
-/* List projects */
-
-.o-list-project {
-    position: relative;
-    margin: 10px 20px 20px 20px;
-    top: 40px;
-    font-size: 1rem; 
-    color: white;
-    text-align: center;
-    display: flex;
- 
-
-}
-
-
-
-.o-list-project  >h1{
     position: absolute;
-    top: -10px;
-    left: -25px;
-    margin:-30px 0 0 30px;
-    font-size: 2rem;
-    color:var(--titleColor);
-
-}
-
-.o-info-project{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    margin: 6px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border: var(--borderLine);
-    background:rgba(127, 140, 141, 0.4);
-    border-radius: 5px 5px 10px 10px;
-    box-shadow: 0 4px 10px rgba(255, 255, 255, .2) ;
-    transition: .3s;
-}
-
-.o-info-project:hover{
-    box-shadow: 0 2px 20px rgba(255, 255, 255, .4);
+    width: 500px;
+    height: 114px;
+    margin: 2rem 2.5rem;
+    color: #000000;
 }
 
 
-.o-list-project .o-img-project{
-    text-align: left;
-    width: 100%;
-    height: auto;
-   
-}
 
-.o-info-project h1{
-    width: 100%;
-    color:var(--titleColor);
-    font-size: 20px;
-    padding: 10px;
-    background-color: var(--bgColor);
-}
-
-
-.o-info-project p{
-    position: relative;
-    margin: 10px;
-    text-align: start;
-}
 
