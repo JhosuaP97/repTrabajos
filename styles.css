@@ -1,89 +1,171 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background: linear-gradient(120.11deg, #C14A06 6.3%, rgba(136, 50, 1, 0.26) 84.11%);
-    
+body {
+  background: linear-gradient(
+    120.11deg,
+    #c14a06 6.3%,
+    rgba(136, 50, 1, 0.26) 84.11%
+  );
 }
 
-.o-info-container{
-    font-family: 'Montserrat',sans-serif;
-    display: flex;
-    position: relative;
-    width: 564.33px;
-    height: 787.06px;
-    background: #f2f2f2;
-    border-radius: 0px 0px 10px 10px;
-    left: 2rem;
-    top: 2rem;
-
+.o-info-container {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
-.o-profile .o-img-profile{
-    position: relative;
-    left: 10rem;
-    bottom: 10rem;
-    width: 15rem;
-    height: 15rem;   
+.o-profile {
+  position: relative;
+  width: 400px;
+  max-width: 90%;
+  height: 600px;
+  background: #f2f2f2;
+  border-radius: 0px 0px 0.625rem 0.625rem;
+  left: 2rem;
+  top: 0.4rem;
+  z-index: 3;
 }
 
-.o-img-profile img{
-    max-width: 15rem;
-    border-radius: 100%;
-    border: 4px solid #fdfdfd;
-
+.o-profile .o-img-bg-profile img {
+  max-width: 25.0625rem;
 }
 
-.o-profile h1{
-    position: relative;
-    text-align: center;
-    text-transform: uppercase;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 29px;
-    color: #000000;
-    margin: -10rem 0 -2rem 0;
-    
+.o-profile .o-img-profile {
+  position: relative;
+  left: 7.5rem;
+  bottom: 7.9375rem;
+  width: 12rem;
+  height: 12rem;
 }
 
-.o-profile h2{
-    position: relative;
-    text-align: center;
-    text-transform: capitalize;
-    font-family: 'Open Sans',sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 19px;
-    color: #ff6d1b;
-    margin: 2rem 0 0.5em 0;
-}
-.o-profile h3{
-    position: relative;
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 19px;
-    text-align: center;
-    text-transform: lowercase;
-    color: #919191;
-    margin: 1rem;
-
+.o-img-profile img {
+  max-width: 10rem;
+  border-radius: 100%;
+  border: 0.25rem solid #fdfdfd;
 }
 
-.o-profile p{
-    position: absolute;
-    width: 500px;
-    height: 114px;
-    margin: 2rem 2.5rem;
-    color: #000000;
+.o-profile h1 {
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  margin: -10rem 0 -2rem 0;
 }
 
+.o-profile h2 {
+  position: relative;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.1875rem;
+  color: #ff6d1b;
+  margin: 2rem 0 0.5em 0;
+}
+.o-profile h3 {
+  position: relative;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: lowercase;
+  color: #919191;
+  margin: 0.2rem;
+}
 
+.o-profile .o-profile-info {
+  position: absolute;
+  margin: 0.5rem 2.5rem;
+}
 
+.o-profile-info p {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: justify;
+  text-transform: lowercase;
+  color: #000000;
+}
 
+/*--------------------Project list-------------------- */
+.o-info-container .o-projects-list {
+  position: absolute;
+  width: 800px;
+  max-width: 90%;
+  height: 580px;
+  left: 420px;
+  top: 15px;
+  background-color: #e0e2e2;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.o-navegation-tabs {
+  position: relative;
+  margin: 0 0 0 10px;
+}
+
+ul.o-tabs {
+  width: 100%;
+  background-color: #fdfdfd;
+  list-style: none;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: space-around;
+}
+
+.o-tabs .o-active {
+  background-color: #fa945c;
+  color: #fff;
+  
+}
+
+ul.o-tabs li a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 24px;
+  display: block;
+  padding: 14px 0;
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.o-section {
+  width: 730px;
+  height: 730px;
+  margin: 10px 50px;
+}
+
+.o-section h1 {
+  padding: 10px 0 10px 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 29px;
+  text-decoration-line: underline;
+  color: #000000;
+}
+
+.o-section img {
+  max-width: 95%;
+  border: 8px solid #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
