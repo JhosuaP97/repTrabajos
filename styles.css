@@ -10,7 +10,7 @@ body {
     #c14a06 6.3%,
     rgba(136, 50, 1, 0.26) 84.11%
   );
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .o-info-container {
