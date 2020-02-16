@@ -167,7 +167,7 @@ ul.o-tabs li a {
   padding: 10px 0 10px 0;
   font-style: normal;
   font-weight: 600;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 29px;
   text-decoration-line: underline;
   text-align: left;
@@ -236,6 +236,130 @@ ul.o-tabs li a {
   word-break: break-all;
   background: rgba(142, 142, 142, 0.55);
 }
+
+
+.o-skill-item{
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50% ;
+  background-color: #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 0 0 5px 0;
+  
+}
+
+.o-skill-item img{
+  position: absolute;
+  top: 8px;
+  left: 6px;
+  width: 36px;
+  height: 36px;
+  z-index: 5;
+  
+  
+}
+
+.o-skill-bar{ 
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  width: 400px;
+  height: 10px;
+  background: #FFFAFA;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: -1;
+}
+
+.o-skill1::before{
+  display: block;
+  content: '';
+  background: #ff6d1b;
+  width: 60%;
+  height: 10px ;
+  top: 20px;
+  left: 50px;
+  
+}
+.o-skill2::before{
+  display: block;
+  content: '';
+  background: #ff6d1b;
+  width: 40%;
+  height: 10px ;
+  top: 20px;
+  left: 50px;
+}
+.o-skill3::before{
+  display: block;
+  content: '';
+  background: #ff6d1b;
+  width: 50%;
+  height: 10px ;
+  top: 20px;
+  left: 50px;
+  
+}
+
+.o-skill1::after{
+  position: absolute;
+  content: '60%';
+  top: -5px;
+  left: 410px;
+  font-weight: 600;
+}
+
+.o-skill2::after{
+  position: absolute;
+  content: '40%';
+  top: -5px;
+  left: 410px;
+  font-weight: 600;
+}
+
+.o-skill3::after{
+  position: absolute;
+  content: '50%';
+  top: -5px;
+  left: 410px;
+  font-weight: 600;
+}
+
+.o-line{
+  display: flex;
+  justify-content: space-between;
+  margin: -5px 0;
+  width: 80%;
+  height: 0px;
+  border: 1px solid #b0b0b0;
+}
+
+.o-hobbie{
+  position: relative;
+  left: 10px;
+  top: 35px;
+  width: 140px;
+  height: 140px;
+  border-radius: 50% ;
+  background-color: #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.o-hobbie h3{
+  font-size: 15px;
+  top: 10px;
+  position: relative;
+  text-align: center;
+  word-break: break-all;
+}
+
+.o-hobbie img {
+  position: absolute;
+  top: 36px;
+  left: 36px;
+  width: 66px;
+  height: 66px;
+}
+
 
 
 
