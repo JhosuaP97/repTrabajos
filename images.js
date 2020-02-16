@@ -3,12 +3,15 @@ let images = ['resources/works/corvette.jpg',
               'resources/works/videosInteractivos.PNG'];
 let count = 0;
 
+let titles =['titulo1,titulo2,titulo3'];
+
 function showImages(container){
         container.addEventListener('click',e =>{
-            let back = container.querySelector('.back');
-            let forward = container.querySelector('.forward');
+            let back = container.querySelector('.o-back');
+            let forward = container.querySelector('.o-forward');
             let img = container.querySelector('img');
             let target = e.target;
+            let title = container.querySelector('h2');
 
             if(target == back){
                 if(count > 0){
