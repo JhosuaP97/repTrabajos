@@ -14,19 +14,23 @@ body {
 }
 
 .o-info-container {
+  position: relative;
   font-family: "Montserrat", sans-serif;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  width: 100vw;
-  height: 100vh;
+  width: 80%;
+  height: 100%;
+  max-width: 1000px;
+  margin: 0 5%;
 }
 
 .o-profile {
   position: relative;
-  width: 400px;
-  max-width: 90%;
+  width: 100%;
+  max-width: 401px;
   height: 600px;
+  max-height: 700px;
   background: #f2f2f2;
   border-radius: 0px 0px 0.625rem 0.625rem;
   left: 2rem;
@@ -35,19 +39,21 @@ body {
 }
 
 .o-profile .o-img-bg-profile img {
-  max-width: 25.0625rem;
+  width: 100%;
+  height: auto;
 }
 
 .o-profile .o-img-profile {
   position: relative;
-  left: 7.5rem;
-  bottom: 7.9375rem;
-  width: 12rem;
-  height: 12rem;
+  left: 30%;
+  bottom: 25%;
+  width: 100%;
+  height: auto;
 }
 
 .o-img-profile img {
-  max-width: 10rem;
+  width: 45%;
+  height: auto;
   border-radius: 100%;
   border: 0.25rem solid #fdfdfd;
 }
@@ -95,21 +101,24 @@ body {
 }
 
 .o-profile-info p {
+  position: relative;
+  width: 90%;
+  height: 100px;
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 19px;
   text-align: justify;
-  text-transform: lowercase;
-  color: #000000;
+  text-transform: initial;
+  color: #000000;  
 }
 
 /*--------------------Project list-------------------- */
-.o-info-container .o-projects-list {
+.o-projects-list {
   position: absolute;
-  width: 800px;
-  max-width: 90%;
+  width: 100%;
+  max-width: 800px;
   height: 580px;
   left: 420px;
   top: 15px;
@@ -187,6 +196,12 @@ ul.o-tabs li a {
   
 }
 
+.o-projecTab{
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+}
+
 .o-btn:hover{
   cursor: pointer;
   transform: scale(1.2);
@@ -214,7 +229,7 @@ ul.o-tabs li a {
 }
 
 .o-projecTab-item img{
-  width: 600px;
+  width: 85.5%;
   height: 400px;
   object-fit: cover;
   border: 8px solid #ffffff;
@@ -233,7 +248,6 @@ ul.o-tabs li a {
 .o-projecTab-text h2, .o-projecTab-text p{
   max-width: 100%;
   max-height: 100%;
-  word-break: break-all;
   background: rgba(142, 142, 142, 0.55);
 }
 
@@ -255,9 +269,7 @@ ul.o-tabs li a {
   left: 6px;
   width: 36px;
   height: 36px;
-  z-index: 5;
-  
-  
+  z-index: 5;  
 }
 
 .o-skill-bar{ 
@@ -328,7 +340,7 @@ ul.o-tabs li a {
 .o-line{
   display: flex;
   justify-content: space-between;
-  margin: -5px 0;
+  margin: 10px 0 0 0;
   width: 80%;
   height: 0px;
   border: 1px solid #b0b0b0;
@@ -360,6 +372,223 @@ ul.o-tabs li a {
   height: 66px;
 }
 
+@media screen and (max-width:600px){
+
+  .o-section h1 {
+    padding: 10px 0 10px 0;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 29px;
+    text-decoration-line: underline;
+    text-align: left;
+    color: #000000;
+  }
+  .o-projects-list{
+    position: relative;
+    left: 30px;    
+  }
+
+  .o-navegation-tabs {
+    position: relative;
+    margin: 0;
+  }
+
+  ul.o-tabs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+
+  ul.o-tabs li{
+    width: 70%;    
+  }
+
+  ul.o-tabs li a{
+    font-size: 14px;
+  }
+
+  .o-btn:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+  
+  .o-back{
+    position: absolute;
+    left: -35px;
+    top: 260px;
+  }
+  
+  .o-forward{
+    position: absolute;
+    left: 190px;
+    top: 260px;
+  }
+
+  .o-projecTab-item{
+    display: flex;
+    position: relative;
+    right:80px;
+    width: 50%;
+    height: 50%;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 400px;
+  
+  }
+
+  .o-projecTab-item img{
+    width: 70%;
+    height: 12.5rem;
+    object-fit: cover;
+    border: 8px solid #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .o-projecTab-text{
+    width: 80%;
+    position: absolute;
+    bottom:0;
+    padding: 5px 24px;
+    
+  }
+  
+  .o-projecTab-text h2, .o-projecTab-text p{
+    font-size: 16px;
+    max-width: 100%;
+    max-height: 100%;
+    word-break: break-all;
+    background: rgba(142, 142, 142, 0.55);
+  }
+
+
+  .o-skill-item{
+    position: relative;
+    width: 25px;
+    height: 25px;
+    border-radius: 50% ;
+    background-color: #fff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 0 0 5px 0;
+    font-size: 0.625rem;
+    
+  }
+
+  .o-skill-item img{
+    position: absolute;
+    top: 5px;
+    left: 4px;
+    width: 16px;
+    height: 16px;
+    z-index: 5;  
+  }
+  
+  .o-skill-bar{ 
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 150px;
+    height: 5px;
+    background: #FFFAFA;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: -1;
+  }
+  
+  .o-skill1::before{
+    display: block;
+    content: '';
+    background: #ff6d1b;
+    width: 60%;
+    height: 5px ;
+    top: 20px;
+    left: 50px;
+    
+  }
+  .o-skill2::before{
+    display: block;
+    content: '';
+    background: #ff6d1b;
+    width: 40%;
+    height: 5px ;
+    top: 20px;
+    left: 50px;
+  }
+  .o-skill3::before{
+    display: block;
+    content: '';
+    background: #ff6d1b;
+    width: 50%;
+    height: 5px ;
+    top: 20px;
+    left: 50px;
+    
+  }
+  
+  .o-skill1::after{
+    position: absolute;
+    content: '60%';
+    top: -5px;
+    left: 155px;
+    font-weight: 600;
+  }
+  
+  .o-skill2::after{
+    position: absolute;
+    content: '40%';
+    top: -5px;
+    left: 155px;
+    font-weight: 600;
+  }
+  
+  .o-skill3::after{
+    position: absolute;
+    content: '50%';
+    top: -5px;
+    left: 155px;
+    font-weight: 600;
+  }
+  .o-line{
+    display: flex;
+    justify-content: center;  
+    margin: 10px 0 0 0;
+    height: 0px;
+    border: 1px solid #b0b0b0;
+  }
+  .o-projecTab .o-line h1{
+    text-align: left;
+  }
+
+  .o-hobbie{
+    position: relative;
+    left: -200px;
+    top: 35px;
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+    border-radius: 50% ;
+    background-color: #fff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .o-hobbie h3{
+    font-size: 8px;
+    top: 5px;
+    position: relative;
+    text-align: center;
+    word-break: break-all;
+  }
+  
+  .o-hobbie img {
+    position: absolute;
+    top: 22px;
+    left: 16px;
+    width: 36px;
+    height: 36px;
+  }
+
+
+
+}
 
 
 
