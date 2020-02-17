@@ -160,7 +160,7 @@ ul.o-tabs li a {
   padding: 14px 0;
   text-align: center;
   font-style: normal;
-  font-weight: 600;
+  /* font-weight: 600; */
   font-size: 24px;
   line-height: 29px;
 }
@@ -175,10 +175,9 @@ ul.o-tabs li a {
 .o-section h1 {
   padding: 10px 0 10px 0;
   font-style: normal;
-  font-weight: 600;
+ /*  font-weight: 600; */
   font-size: 20px;
   line-height: 29px;
-  text-decoration-line: underline;
   text-align: left;
   color: #000000;
 }
@@ -200,6 +199,10 @@ ul.o-tabs li a {
   position: relative;
   width: 100%;
   max-width: 1000px;
+}
+
+.o-projecTab h1{
+  font-weight: 500;
 }
 
 .o-btn:hover{
@@ -255,8 +258,8 @@ ul.o-tabs li a {
 
 .o-skill-item{
   position: relative;
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   border-radius: 50% ;
   background-color: #fff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -266,10 +269,10 @@ ul.o-tabs li a {
 
 .o-skill-item img{
   position: absolute;
-  top: 8px;
-  left: 6px;
-  width: 36px;
-  height: 36px;
+  top: 7px;
+  left: 7px;
+  width: 46px;
+  height: 46px;
   z-index: 5;  
 }
 
@@ -350,9 +353,9 @@ ul.o-tabs li a {
 .o-hobbie{
   position: relative;
   left: 10px;
-  top: 35px;
-  width: 140px;
-  height: 140px;
+  top: 10px;
+  width: 108px;
+  height: 108px;
   border-radius: 50% ;
   background-color: #fff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -365,12 +368,16 @@ ul.o-tabs li a {
   word-break: break-all;
 }
 
+.o-hobbie h3.o-p{
+  font-size: 13.3px;
+}
+
 .o-hobbie img {
   position: absolute;
   top: 36px;
-  left: 36px;
-  width: 66px;
-  height: 66px;
+  left: 30px;
+  width: 50px;
+  height: 50px;
 }
 
 @media screen and (max-width:600px){
