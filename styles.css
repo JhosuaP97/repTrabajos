@@ -102,13 +102,8 @@ body {
 
 .o-profile-info p {
   position: relative;
-  width: 90%;
-  height: 100px;
   font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
-  line-height: 19px;
   text-align: justify;
   text-transform: initial;
   color: #000000;  
@@ -555,13 +550,14 @@ ul.o-tabs li a {
     font-weight: 600;
   }
   .o-line{
+    
     display: flex;
     justify-content: center;  
     margin: 10px 0 0 0;
     height: 0px;
     border: 1px solid #b0b0b0;
   }
-  .o-projecTab .o-line h1{
+  .o-line h1{
     text-align: left;
   }
 
@@ -590,6 +586,10 @@ ul.o-tabs li a {
     left: 16px;
     width: 36px;
     height: 36px;
+  }
+
+  .o-hobbie h3.o-p{
+    font-size: 8px;
   }
 
 
